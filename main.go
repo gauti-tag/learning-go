@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	var conferenceName string = "Go conference"
-	const conferenceTickets int = 50 // Positive and negative numbers
-	var remainingTickets uint = 50   // POsitive numbers
+	conferenceName := "Go conference" // := used to declare and initialize
+	const conferenceTickets int = 50  // Positive and negative numbers
+	var remainingTickets uint = 50    // POsitive numbers
 
 	/*fmt.Println("Welcome to our", conferenceName, "booking application")
 	fmt.Println("we have total of", conferenceTickets, "tickets and", remainingTickets, "are still available")
@@ -40,9 +40,9 @@ func main() {
 	remainingTickets = remainingTickets - userTickets
 	bookings[0] = firstName + " " + lastName
 
-	fmt.Printf("the whole array %v\n", bookings)
+	fmt.Printf("the whole array %v\n", bookings) // %v used to print the value
 	fmt.Printf("the first element %v\n", bookings[0])
-	fmt.Printf("the array type %T \n", bookings)
+	fmt.Printf("the array type %T \n", bookings) // %T used to check the type
 	fmt.Printf("the array length %v \n", len(bookings))
 
 	fmt.Printf("Thank you %v %v for booking %v tickets. You will receive a confirmation email at %v \n", firstName, lastName, userTickets, email)
